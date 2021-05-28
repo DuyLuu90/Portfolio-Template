@@ -44,8 +44,3 @@ class App extends React.Component {
 }
 
 export default App;
-
-
-function About() {
-  return <h1>About</h1>;
-}

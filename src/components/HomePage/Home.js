@@ -2,8 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css'
 
+import Summary from './Summary'
+import Info from './Info'
+
 export default class Home extends React.Component {
     render() {
+
         return(
         <div>
 			<div className = "container-fluid">
@@ -26,6 +30,8 @@ export default class Home extends React.Component {
 						</div>
 					</div>
 				</div>
+				<Info />
+				<Summary />
 			</div>
 		</div>
         )
