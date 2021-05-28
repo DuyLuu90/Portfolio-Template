@@ -1,0 +1,56 @@
+
+
+  .entry-banner{
+    text-align: center;
+  }
+  
+  .entry-banner h1 {
+    font-family: "Source Sans Pro", Arial, sans-serif;
+  }
+  #hello {
+    font-size: 28pt;
+  }
+  #name {
+    font-size: 100pt;
+  }
+  #person-description {
+    font-size: 33pt;
+  }
+  .banner-buttons .btn-border,
+  .submit-contact .btn-border,
+  .projects .btn-border {
+    background-color: transparent;
+    width: 100%;
+    margin-top: 40px;
+    color: white;
+    font-family: "Roboto", Helvetica, serif;
+    font-size: 16pt;
+    border-radius: 0;
+    border: 2px solid white;
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    -ms-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+  }
+  
+  .banner-buttons .btn-border:hover,
+  .submit-contact .btn-border:hover,
+  .projects .btn-border:hover {
+    border: 2px solid white;
+    background-color: white;
+  }
+
+  .banner-buttons {
+    display: flex;
+    width:50%;
+    justify-content:space-around;
+  }
+
+  .banner-buttons div {
+    margin-top: 30px;
+  }
+
+  .banner-buttons .btn-border{
+    padding: 10px;
+  }
