@@ -4,63 +4,75 @@
     color: white;
   }
   
-  .projects-header-quote {
-    margin-bottom: 20px;
-  }
-  .projects h1,
-  .projects h3 {
+  .projects h1,.projects h3 {
     font-family: "Source Sans Pro", Arial, sans-serif;
   }
+
+  .projects h3 {
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+
   .projects p {
     font-family: "Roboto", Helvetica, serif;
     padding: 0 10px;
   }
   
-  .projects-header-quote {
-    font-style: italic;
+  .row-portfolio{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    width: 100%;
   }
 
+  .project {
+    padding:20px 10px;
+    margin-bottom: 20px
+  }
+
+  .row-portfolio h3{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .project-more-info{
+    margin: 45px auto 15px auto;
+  }
+
+  .btn{
+    padding:10px;
+  }
+  .btn:hover{
+    color: rgb(112, 103, 51);
+  }
 
 /*.luvtalk-project, .personal-website-project, .strike-zone-project, .resume {border: 3px solid white;}*/
-.luvtalk-project {
+.luvtalk {
     background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
       url(../../images/luvtalklogo.png);
     background-position: center center;
   }
   
-  .personal-website-project {
+.personal-website {
     background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
       url(../../images/logo.svg);
     background-position: center center;
   }
   
-  .strike-zone-project {
-    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
-      url(../../images/mlbproject.png);
-    background-position: center center;
-  }
+.strike-zone {
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url(../../images/mlbproject.png);
+  background-position: center center;
+}
 
-  .row-portfolio{
-    display: flex;
-    flex-direction: column;
-  }
-  .row-portfolio>div>div{
-    margin: 15px auto;
-    min-height: 200px;
-    padding: 15px;
-    text-align: center;
-  }
-  .project-more-info{
-    margin: 15px;
-  }
 
-  @media screen and (min-width:700px){
+@media screen and (min-width:700px){
     .row-portfolio{
-      width: 100%;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-around;
     }
-    .row-portfolio>div{
+    .row-portfolio .project{
       width: 30%;
+      
     }
   }

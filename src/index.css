@@ -45,3 +45,7 @@ body {
 a{
   text-decoration: none;
 }
+
+.row{
+  margin: 10px;
+}

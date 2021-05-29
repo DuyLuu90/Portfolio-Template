@@ -1,5 +1,3 @@
-
-
   .entry-banner{
     text-align: center;
   }
@@ -68,12 +66,12 @@
     background-position: center center;
   }
   
-  .about-header h1 {
+  h1.about-header  {
     font-family: "Source Sans Pro", Arial, sans-serif;
     font-size: 34pt;
   }
   
-  .about-header-quote {
+  h3.about-header-quote {
     font-family: "Slabo", Helvetica, serif;
     font-style: italic;
     margin-bottom: 50px;
@@ -137,22 +135,28 @@
     color: white;
     padding: 60px 30px;
   }
-  
-  .summary .row {
-    padding: 50px 6%;
-    width: 100%;
-  }
-  
+
   .summary h3 {
     font-family: "Source Sans Pro", Arial, sans-serif;
   }
   .summary p {
     font-family: "Roboto", Helvetica, serif;
   }
+  
+  .summary .row {
+    padding: 50px 6%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  
 
   /**/
   .summary .row>div{
     width: 45%;
+    margin-bottom: 30px;
+    height: 45%;
   }
 
   .summary{
